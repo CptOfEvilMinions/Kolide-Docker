@@ -1,5 +1,6 @@
 version: '2.2'
-services: 
+services:
+  ############################################## NGINX ##############################################
   nginx:
     build: 
       context: .
@@ -15,6 +16,7 @@ services:
     depends_on: 
       - kolide
 
+  ############################################## Kolide ##############################################
   kolide:
     build: 
       context: .
@@ -29,6 +31,7 @@ services:
       - mysql
       - redis
 
+  ############################################## MySQL ##############################################
   mysql:
     build: 
       context: .
@@ -45,6 +48,7 @@ services:
     networks: 
       - kolide-backend
 
+  ############################################## Redis ##############################################
   redis:
     image: redis:latest
     container_name: kolide-redis

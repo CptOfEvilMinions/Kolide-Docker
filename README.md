@@ -4,8 +4,7 @@ This project contains code to spin up Kolide Fleet with Docker
 
 ## Generate OpenSSL keys
 This project contains with a self-signed OpenSSL ceretificate which should ONLY BE used for testing. Below are instructions to make your own
-1. `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout conf/nginx/ssl/snakeoil.key -out conf/nginx/ssl/snakeoil.crt`
-1. `docker-compose build nginx`
+1. `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout conf/tls/<name>.key -out conf/tls/<name>.crt`
 
 ## Set Kolide JWT key
 This project has a pre-defined JWT key of `super_secret_key_here` which should ONLY BE used for testing. Below are instructions to make your own
