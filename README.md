@@ -12,6 +12,7 @@ This project has a pre-defined JWT key of `super_secret_key_here` which should O
 1. Copy key and paste in `conf/kolide/kolide.yml` as the value for `jwt_key`
 
 ## Dev/testing setup
+1. `docker-compose build`
 1. `docker-compose run --rm kolide fleet prepare db --config /etc/kolide/kolide.yml`
     1. Initializes Kolid database
     1. ![Kolide init database](.img/kolide-init.png)

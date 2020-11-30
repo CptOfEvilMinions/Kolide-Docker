@@ -1,4 +1,4 @@
-FROM kolide/fleet:3.1.0
+FROM kolide/fleet:3.2.0
 
 # Create a group and user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup

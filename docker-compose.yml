@@ -14,7 +14,7 @@ services:
       - default
       - kolide-backend
     depends_on: 
-      - kolide
+       - kolide
 
   ############################################## Kolide ##############################################
   kolide:
