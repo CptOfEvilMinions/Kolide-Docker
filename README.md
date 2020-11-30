@@ -2,6 +2,9 @@
 
 This project contains code to spin up Kolide Fleet with Docker
 
+The Kolide Fleet project has been discontinued in favor for FleetDM. This repo is NO LONGER maintained.
+Please go here for the latest Docker Fleet setup: https://github.com/CptOfEvilMinions/FleetDM-Docker.git
+
 ## Generate OpenSSL keys
 This project contains with a self-signed OpenSSL ceretificate which should ONLY BE used for testing. Below are instructions to make your own
 1. `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout conf/tls/<name>.key -out conf/tls/<name>.crt`
